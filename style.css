@@ -17,10 +17,74 @@
   color: #000;
 }
 
+.fluid-container .header .sign-cart {
+  margin-right: 35px;
+}
+
 .fluid-container .header .sign-cart div {
   letter-spacing: 1.5px;
   font-size: 22px;
   margin-left: 22px;
   color: #000;
+}
+
+.fluid-container .kitchen-container {
+  background-image: url(./assets/Kitchen_3.png);
+  background-position: center center;
+  background-size: cover;
+  margin: 0px 50px;
+  height: 700px;
+  border-radius: 15px;
+  color: #fff;
+  padding: 150px 85px;
+}
+
+.fluid-container .kitchen-container .text {
+  width: 500px;
+  font-size: 20px;
+  letter-spacing: 0;
+}
+
+.fluid-container .kitchen-container .text .title {
+  margin: 0;
+  padding: 0;
+  font-size: 62px;
+}
+
+.fluid-container .kitchen-container .text button {
+  width: 200px;
+  height: 50px;
+  border-radius: 5px;
+  color: #004a4c;
+  font-size: 16px;
+}
+
+.fluid-container .kitchen-container .text button:hover {
+  outline: #004a4c;
+}
+
+.cart {
+  position: relative;
+}
+
+.bg {
+  position: absolute;
+  background-color: #dda74a;
+  width: 15px;
+  height: 15px;
+  line-height: 15px;
+  text-align: center;
+  border-radius: 20px;
+  top: 5px;
+  left: 56px;
+  border: 1px solid #fff;
+}
+
+.bg span {
+  font-size: 13px;
+  color: #fff;
+  position: absolute;
+  right: 2px;
+  bottom: 1px;
 }
 /*# sourceMappingURL=style.css.map */
