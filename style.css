@@ -6,22 +6,31 @@
   font-family: "Darker Grotesque", sans-serif;
 }
 
-.fluid-container .header {
-  margin: 23px 50px;
+#header.scroll {
+  position: fixed;
+  width: 100%;
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
+  background: rgba(255, 255, 255, 0.337);
 }
 
-.fluid-container .header .nav div {
+#header {
+  width: 100%;
+  padding: 20px 50px;
+}
+
+#header .nav div {
   letter-spacing: 1.5px;
   font-size: 22px;
   margin-left: 22px;
   color: #000;
 }
 
-.fluid-container .header .sign-cart {
-  margin-right: 35px;
+#header .sign-cart {
+  margin-right: 20px;
 }
 
-.fluid-container .header .sign-cart div {
+#header .sign-cart div {
   letter-spacing: 1.5px;
   font-size: 22px;
   margin-left: 22px;
@@ -54,13 +63,69 @@
 .fluid-container .kitchen-container .text button {
   width: 200px;
   height: 50px;
-  border-radius: 5px;
+  border-radius: 8px;
   color: #004a4c;
   font-size: 16px;
+  border: 2px solid #fff;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
 }
 
 .fluid-container .kitchen-container .text button:hover {
-  outline: #004a4c;
+  opacity: 0.8;
+  border: 2px solid #004a4c;
+}
+
+.mask-group-container {
+  background-image: url(./assets/mask.png);
+  background-position: center center;
+  height: 750px;
+  margin: 0px 50px;
+  color: #002d33;
+  font-weight: normal;
+}
+
+.mask-group-container .description {
+  padding-top: 125px;
+  margin-left: 900px;
+  width: 30%;
+  font-size: 18px;
+}
+
+.mask-group-container .description .title {
+  font-size: 20px;
+  letter-spacing: 2px;
+  margin: 0;
+}
+
+.mask-group-container .description ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.mask-group-container .description ul li {
+  margin: 40px 0px;
+}
+
+.mask-group-container .description ul li span {
+  margin-left: 22px;
+}
+
+.mask-group-container button {
+  height: 50px;
+  width: 170px;
+  background-color: #004a4c;
+  outline: 0;
+  border: 2px solid #004a4c;
+  border-radius: 10px;
+  color: #fff;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.mask-group-container button:hover {
+  opacity: 0.9;
+  border: 2px solid #023436;
 }
 
 .cart {
