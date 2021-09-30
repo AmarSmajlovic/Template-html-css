@@ -4,3 +4,6 @@ window.onscroll = () => {
    if(window.pageYOffset> header.offsetTop) header.classList.add('scroll')
    else header.classList.remove('scroll');
 }
+
+
+//logic for parallax slider(scroll horizontal on images)

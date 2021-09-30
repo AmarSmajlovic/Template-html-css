@@ -6,6 +6,10 @@
   font-family: "Darker Grotesque", sans-serif;
 }
 
+body {
+  overscroll-behavior: none;
+}
+
 #header.scroll {
   position: fixed;
   width: 100%;
@@ -48,19 +52,19 @@
   padding: 150px 85px;
 }
 
-.fluid-container .kitchen-container .text {
+.fluid-container .kitchen-container .content {
   width: 500px;
   font-size: 20px;
   letter-spacing: 0;
 }
 
-.fluid-container .kitchen-container .text .title {
+.fluid-container .kitchen-container .content .title {
   margin: 0;
   padding: 0;
   font-size: 62px;
 }
 
-.fluid-container .kitchen-container .text button {
+.fluid-container .kitchen-container .content button {
   width: 200px;
   height: 50px;
   border-radius: 8px;
@@ -71,7 +75,7 @@
   transition: 0.4s;
 }
 
-.fluid-container .kitchen-container .text button:hover {
+.fluid-container .kitchen-container .content button:hover {
   opacity: 0.8;
   border: 2px solid #004a4c;
 }
@@ -85,29 +89,29 @@
   font-weight: normal;
 }
 
-.mask-group-container .description {
+.mask-group-container .content {
   padding-top: 125px;
   margin-left: 900px;
   width: 30%;
   font-size: 18px;
 }
 
-.mask-group-container .description .title {
+.mask-group-container .content .title {
   font-size: 20px;
   letter-spacing: 2px;
   margin: 0;
 }
 
-.mask-group-container .description ul {
+.mask-group-container .content ul {
   list-style-type: none;
   padding: 0;
 }
 
-.mask-group-container .description ul li {
+.mask-group-container .content ul li {
   margin: 40px 0px;
 }
 
-.mask-group-container .description ul li span {
+.mask-group-container .content ul li span {
   margin-left: 22px;
 }
 
@@ -126,6 +130,39 @@
 .mask-group-container button:hover {
   opacity: 0.9;
   border: 2px solid #023436;
+}
+
+.images-container {
+  position: relative;
+  height: 500px;
+  overflow: hidden;
+  margin: 0 50px;
+}
+
+.content-images {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+}
+
+.content-images .slider {
+  position: absolute;
+  top: 15%;
+  height: 100%;
+}
+
+.content-images .slider .slika {
+  position: relative;
+  width: 700px;
+  margin-left: 100px;
+}
+
+.content-images .slider .slika .img {
+  position: absolute;
+  left: -100px;
+  width: 500px;
+  height: 100%;
+  border-radius: 10px;
 }
 
 .cart {

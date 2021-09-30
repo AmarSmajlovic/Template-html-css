@@ -6,6 +6,10 @@
   font-family: "Darker Grotesque", sans-serif;
 }
 
+body {
+  overscroll-behavior: none;
+}
+
 #header.scroll {
   position: fixed;
   width: 100%;
@@ -45,7 +49,7 @@
     border-radius: 15px;
     color: #fff;
     padding: 150px 85px;
-    .text {
+    .content {
       width: 500px;
       font-size: 20px;
       letter-spacing: 0;
@@ -78,7 +82,7 @@
   margin: 0px 50px;
   color: #002d33;
   font-weight: normal;
-  .description {
+  .content {
     //I will use margin for change position of this div , i know this is bad practice :/
     padding-top: 125px;
     margin-left: 900px;
@@ -112,6 +116,35 @@
     &:hover {
       opacity: 0.9;
       border: 2px solid #023436;
+    }
+  }
+}
+
+.images-container {
+  position: relative;
+  height: 500px;
+  overflow: hidden;
+  margin: 0 50px;
+}
+.content-images {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  .slider {
+    position: absolute;
+    top: 15%;
+    height: 100%;
+    .slika {
+      position: relative;
+      width: 700px;
+      margin-left: 100px;
+      .img {
+        position: absolute;
+        left: -100px;
+        width: 500px;
+        height: 100%;
+        border-radius: 10px;
+      }
     }
   }
 }
