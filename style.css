@@ -178,6 +178,27 @@ body {
   background-color: #fff;
 }
 
+.content-biom .content button {
+  height: 50px;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #000;
+  color: #002d33;
+  font-weight: bold;
+}
+
+.content-biom .content button .line {
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+  width: 50px;
+  height: 2px;
+  background-color: #002d33;
+}
+
+.content-biom .content button img {
+  padding-right: 10px;
+}
+
 .cart {
   position: relative;
 }

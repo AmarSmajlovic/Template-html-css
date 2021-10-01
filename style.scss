@@ -159,6 +159,25 @@ body {
 .content-biom {
   height: 500px;
   background-color: #fff;
+  .content {
+    button {
+      height: 50px;
+      padding: 10px;
+      border-radius: 5px;
+      border: 1px solid #000;
+      color: #002d33;
+      font-weight: bold;
+      .line {
+        transform: rotate(90deg);
+        width: 50px;
+        height: 2px;
+        background-color: #002d33;
+      }
+      img {
+        padding-right: 10px;
+      }
+    }
+  }
 }
 
 //Style for badge on cart icon
