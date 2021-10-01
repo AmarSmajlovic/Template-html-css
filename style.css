@@ -174,8 +174,24 @@ body {
 }
 
 .content-biom {
+  margin-top: 50px;
   height: 500px;
   background-color: #fff;
+}
+
+.content-biom .content {
+  margin-bottom: 150px;
+}
+
+.content-biom .content .title {
+  line-height: 0.9;
+  padding: 0;
+  margin: 0;
+}
+
+.content-biom .content .title p {
+  font-size: 40px;
+  line-height: 0.6;
 }
 
 .content-biom .content button {
@@ -185,6 +201,7 @@ body {
   border: 1px solid #000;
   color: #002d33;
   font-weight: bold;
+  margin-top: 20px;
 }
 
 .content-biom .content button .line {
