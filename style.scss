@@ -120,33 +120,45 @@ body {
   }
 }
 
-.images-container {
-  position: relative;
-  height: 500px;
-  overflow: hidden;
-  margin: 0 50px;
-}
 .content-images {
-  position: absolute;
-  height: 100%;
-  width: 100%;
-  .slider {
-    position: absolute;
-    top: 15%;
-    height: 100%;
-    .slika {
-      position: relative;
-      width: 700px;
-      margin-left: 100px;
-      .img {
-        position: absolute;
-        left: -100px;
-        width: 500px;
-        height: 100%;
-        border-radius: 10px;
+  .slika {
+    height: 420px;
+    overflow: hidden;
+    border-radius: 20px;
+    .text {
+      font-size: 16px;
+      color: #fff;
+      line-height: 0.8;
+      z-index: 999;
+      span {
+        font-size: 6rem;
       }
     }
+    &:hover {
+      img {
+        transform: scale(1.06);
+      }
+      .tekstop {
+        display: block;
+        z-index: 999;
+      }
+    }
+    img {
+      transition: transform 0.8s ease;
+    }
   }
+}
+
+.tekstop {
+  display: none;
+  padding-bottom: 100px;
+  color: #fff;
+  font-size: 24px;
+}
+
+.content-biom {
+  height: 500px;
+  background-color: #fff;
 }
 
 //Style for badge on cart icon

@@ -132,37 +132,50 @@ body {
   border: 2px solid #023436;
 }
 
-.images-container {
-  position: relative;
-  height: 500px;
+.content-images .slika {
+  height: 420px;
   overflow: hidden;
-  margin: 0 50px;
+  border-radius: 20px;
 }
 
-.content-images {
-  position: absolute;
-  height: 100%;
-  width: 100%;
+.content-images .slika .text {
+  font-size: 16px;
+  color: #fff;
+  line-height: 0.8;
+  z-index: 999;
 }
 
-.content-images .slider {
-  position: absolute;
-  top: 15%;
-  height: 100%;
+.content-images .slika .text span {
+  font-size: 6rem;
 }
 
-.content-images .slider .slika {
-  position: relative;
-  width: 700px;
-  margin-left: 100px;
+.content-images .slika:hover img {
+  -webkit-transform: scale(1.06);
+          transform: scale(1.06);
 }
 
-.content-images .slider .slika .img {
-  position: absolute;
-  left: -100px;
-  width: 500px;
-  height: 100%;
-  border-radius: 10px;
+.content-images .slika:hover .tekstop {
+  display: block;
+  z-index: 999;
+}
+
+.content-images .slika img {
+  -webkit-transition: -webkit-transform 0.8s ease;
+  transition: -webkit-transform 0.8s ease;
+  transition: transform 0.8s ease;
+  transition: transform 0.8s ease, -webkit-transform 0.8s ease;
+}
+
+.tekstop {
+  display: none;
+  padding-bottom: 100px;
+  color: #fff;
+  font-size: 24px;
+}
+
+.content-biom {
+  height: 500px;
+  background-color: #fff;
 }
 
 .cart {
