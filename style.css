@@ -350,4 +350,43 @@ body {
   top: 290px;
   left: 528px;
 }
+
+.ocean-div {
+  margin: 1050px 50px 0px 50px;
+  height: 600px;
+  z-index: 999;
+  max-width: 100%;
+  position: relative;
+  border-radius: 15px;
+  overflow: hidden;
+}
+
+.ocean-div .video {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: -1;
+}
+
+.ocean-div .content {
+  color: #fff;
+  font-size: 25px;
+}
+
+.ocean-div .content button {
+  padding: 10px 30px;
+  color: #004a4c;
+  border: 1px solid #fff;
+  border-radius: 10px;
+}
+
+.ocean-div .content button:hover {
+  border: 2px solid #004a4c;
+}
 /*# sourceMappingURL=style.css.map */
