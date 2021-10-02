@@ -223,7 +223,7 @@ body {
 }
 
 .content-biom {
-  margin-top: 200px;
+  margin-top: 300px;
 }
 
 .content-biom .content-images .image {
@@ -279,5 +279,75 @@ body {
   position: absolute;
   right: 2px;
   bottom: 1px;
+}
+
+.wrapper {
+  margin: 300px 50px 0px 50px;
+  position: relative;
+  color: #002d33;
+  font-size: 20px;
+}
+
+.wrapper .rectangle {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  width: 70%;
+  height: 620px;
+  background-color: #dae5e5;
+}
+
+.wrapper .rectangle .content {
+  width: 50%;
+  margin-top: 70px;
+}
+
+.wrapper .rectangle .content .title {
+  letter-spacing: 2px;
+}
+
+.wrapper .rectangle .content h1 {
+  color: #000;
+}
+
+.wrapper .rectangle .content ul {
+  margin-top: 50px;
+  list-style-type: none;
+}
+
+.wrapper .rectangle .content ul li {
+  margin-bottom: 30px;
+}
+
+.wrapper .rectangle .content ul li span {
+  margin-left: 20px;
+}
+
+.wrapper .rectangle .content ul li button {
+  border-radius: 5px;
+  height: 50px;
+  padding: 10px 30px;
+  color: #fff;
+  background-color: #004a4c;
+  border: none;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.wrapper .rectangle .content ul li button:hover {
+  background-color: #002d33;
+}
+
+.wrapper .image1 {
+  position: absolute;
+  left: 200px;
+  top: -50px;
+}
+
+.wrapper .image2 {
+  position: absolute;
+  z-index: 2;
+  top: 290px;
+  left: 528px;
 }
 /*# sourceMappingURL=style.css.map */
